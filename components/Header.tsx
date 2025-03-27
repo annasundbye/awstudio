@@ -27,8 +27,11 @@ export function Header() {
           >
             Om meg
           </Link>
-          <Button className="bg-pink-500 hover:bg-pink-600 text-white">
-            Kontakt meg
+          <Button
+            size="lg"
+            className="bg-pink-500 hover:bg-pink-600 text-white"
+          >
+            <Link href="/about#contact">Kontakt meg</Link>
           </Button>
         </nav>
 
@@ -99,7 +102,7 @@ function MobileNav() {
                 Om meg
               </Link>
               <Link
-                href="#"
+                href="/about#contact"
                 className="block py-2 text-lg font-medium"
                 onClick={() => setOpen(false)}
               >

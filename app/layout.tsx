@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "AWStudio - Anna Witchen Sundbye | Webdesign for små bedrifter i Norge",
+  title: "AWStudio - Webdesign for små bedrifter i Norge",
   description:
     "Jeg skaper profesjonelle og effektive nettsider for små bedrifter i Norge.",
 };
@@ -12,6 +11,7 @@ import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/Header";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,7 +49,7 @@ export default function RootLayout({
                       size="lg"
                       className="bg-white text-pink-600 hover:bg-gray-100"
                     >
-                      Kontakt meg i dag
+                      <Link href="/about#contact">Kontakt meg i dag</Link>
                     </Button>
                   </div>
                 </div>

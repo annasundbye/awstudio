@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function AboutPage() {
@@ -251,7 +250,7 @@ export default function AboutPage() {
         </section>
 
         {/* Contact Info */}
-        <section className="py-16 md:py-24 bg-white">
+        <section id="contact" className="py-16 md:py-24 bg-white">
           <div className="container px-4 md:px-6">
             <div className="grid gap-10 lg:grid-cols-2 items-center">
               <div className="space-y-4">
@@ -275,14 +274,6 @@ export default function AboutPage() {
                     <Mail className="h-5 w-5 text-pink-600 mr-3" />
                     <p className="text-gray-700">anna@awstudio.no</p>
                   </div>
-                </div>
-                <div className="pt-4">
-                  <Button
-                    size="lg"
-                    className="bg-pink-600 hover:bg-pink-700 text-white"
-                  >
-                    Kontakt meg
-                  </Button>
                 </div>
               </div>
               <div className="relative">

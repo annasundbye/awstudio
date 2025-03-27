@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
+import { CheckCircle, HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function HomePage() {
   // Service packages
@@ -155,7 +156,7 @@ export default function HomePage() {
                     size="lg"
                     className="bg-pink-500 hover:bg-pink-600 text-white"
                   >
-                    Kontakt meg
+                    <Link href="/about#contact">Kontakt meg</Link>
                   </Button>
                 </div>
               </div>
@@ -381,7 +382,7 @@ export default function HomePage() {
                 Har du flere spørsmål? Ikke nøl med å kontakte meg.
               </p>
               <Button className="bg-turquoise-400 hover:bg-turquoise-500 text-white">
-                Kontakt meg
+                <Link href="/about#contact">Kontakt meg</Link>
               </Button>
             </div>
           </div>
