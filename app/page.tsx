@@ -35,7 +35,7 @@ export default function HomePage() {
         // "Integrering med fraktløsninger",
       ],
       icon: "🫱🏼‍🫲🏾",
-      color: "from-yellow-300 to-yellow-400",
+      color: "from-yellow-300 to-yellow-500",
     },
     {
       id: 3,
@@ -48,7 +48,7 @@ export default function HomePage() {
         "Jeg fikser eventuelle feil som dukker opp.",
       ],
       icon: "🌸",
-      color: "from-turquoise-300 to-turquoise-400",
+      color: "from-turquoise-200 to-turquoise-500",
     },
   ];
 
@@ -160,15 +160,13 @@ export default function HomePage() {
                   </Button>
                 </div>
               </div>
-              <div className="relative">
-                <div className="relative h-[350px] md:h-[450px] w-full overflow-hidden rounded-xl bg-gradient-to-br from-yellow-300 to-yellow-400 shadow-xl">
-                  <Image
-                    src="/anna-paris.png"
-                    alt="AWStudio tjenester"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+              <div className="relative ml-auto h-[350px] md:h-[300px] w-[450px] rounded-xl bg-gradient-to-br from-yellow-300 to-yellow-400 shadow-xl">
+                <Image
+                  src="/anna-paris.png"
+                  alt="AWStudio tjenester"
+                  fill
+                  className="object-cover rounded-xl"
+                />
                 <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-pink-400"></div>
                 <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-turquoise-400"></div>
               </div>

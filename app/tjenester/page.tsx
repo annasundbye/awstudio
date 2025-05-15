@@ -1,63 +1,62 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import {
+  ExternalLink,
+  Hammer,
+  Headset,
+  Sparkle,
+  Sparkles,
+  WandSparkles,
+} from "lucide-react";
+import Link from "next/link";
 
 export default function PortfolioPage() {
   // Sample portfolio projects
   const projects = [
     {
       id: 1,
-      title: "Bergens Bakeri",
+      title: "AWStudio Lite",
       description:
-        "En moderne nettside for et tradisjonelt bakeri i Bergen, med online bestillingssystem og produktkatalog.",
-      image: "/placeholder.svg?height=600&width=800",
-      tags: ["Webdesign", "E-handel", "Responsivt"],
-      color: "from-pink-500 to-pink-600",
+        "Trenger du kun en statisk nettsiden, uten behov for å oppdatere innhold? Da er dette tilbudet for deg! Jeg bygger en moderne nettside tilpasset din merkevare og kundegruppe. Enkelt og greit.",
+      tags: ["Webdesign", "Statisk", "Personlig"],
+      icon: <WandSparkles color="#ffffff" strokeWidth={1.5} size={40} />,
+      color: "from-pink-300 to-pink-500",
     },
     {
       id: 2,
-      title: "Trondheim Tannklinikk",
+      title: "AWStudio Pro",
       description:
-        "Profesjonell nettside med online booking-system for en tannklinikk i Trondheim.",
-      image: "/placeholder.svg?height=600&width=800",
-      tags: ["Webdesign", "Booking", "SEO"],
-      color: "from-turquoise-500 to-turquoise-600",
+        "Har du behov for å oppdatere nettsiden din bør du velge dette tilbudet. Jeg bygger den etter dine ønsker, med et integrert Content Management System. Opplæring følger med, og vipps er du din egen webdesigner!",
+      icon: <Sparkle color="#ffffff" strokeWidth={1.5} size={52} />,
+      tags: ["Webdesign", "Dynamisk", "CMS"],
+      color: "from-turquoise-500 to-turquoise-200",
     },
     {
       id: 3,
-      title: "Oslo Optikk",
+      title: "AWStudio Pro + Digital Markedsføring",
       description:
-        "E-handelsløsning for en optiker i Oslo, med produktvisning og virtuell prøving av briller.",
-      image: "/placeholder.svg?height=600&width=800",
-      tags: ["E-handel", "3D-visning", "Responsivt"],
-      color: "from-yellow-400 to-yellow-500",
+        "I dette tilbudet følger alle godene med Pro, og du vil i tilegg få skreddersydd markedsføring tilpasset dine ønsker og behov.",
+      icon: <Sparkles color="#ffffff" strokeWidth={1.5} size={52} />,
+      tags: ["Webdesign", "SoMe", "Digital Markedsføring"],
+      color: "from-yellow-200 to-yellow-400",
     },
     {
       id: 4,
-      title: "Stavanger Sjømat",
+      title: "AWStudio Support",
       description:
-        "Nettbutikk for fersk sjømat med leveringstjeneste i Stavanger-området.",
-      image: "/placeholder.svg?height=600&width=800",
-      tags: ["E-handel", "Logistikk", "SEO"],
-      color: "from-pink-500 to-pink-600",
+        "For statiske nettsider er det mulighet til å inngå en vedlikeholdsavtale.",
+      icon: <Headset color="#ffffff" strokeWidth={1.5} size={52} />,
+      tags: ["AWStudio Lite", "Support", "Vedlikehold"],
+      color: "from-yellow-100 to-yellow-200",
     },
     {
       id: 5,
-      title: "Kristiansand Kaffe",
+      title: "Kommer snart...",
       description:
-        "Merkevarebygging og nettbutikk for et lokalt kaffebrenneri i Kristiansand.",
-      image: "/placeholder.svg?height=600&width=800",
-      tags: ["Branding", "E-handel", "Innholdsstrategi"],
-      color: "from-turquoise-500 to-turquoise-600",
-    },
-    {
-      id: 6,
-      title: "Tromsø Turisme",
-      description:
-        "Informasjonsrik turistportal for aktiviteter og opplevelser i Tromsø-området.",
-      image: "/placeholder.svg?height=600&width=800",
-      tags: ["Informasjonsarkitektur", "Kart", "Flerspråklig"],
-      color: "from-yellow-400 to-yellow-500",
+        "Jeg jobber for tiden med et online-booking-system som så snart som mulig lanseres – en løsning kundene dine enkelt kan ta i bruk direkte via nettsiden.",
+      icon: <Hammer color="#ffffff" strokeWidth={1.5} size={52} />,
+      tags: [],
+      color: "from-pink-100 to-pink-300",
     },
   ];
 
@@ -70,15 +69,14 @@ export default function PortfolioPage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2 max-w-[800px]">
                 <div className="inline-block rounded-lg bg-pink-100 px-3 py-1 text-sm text-pink-700 font-medium mb-4">
-                  Mine prosjekter
+                  Mine tilbud
                 </div>
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-gray-900">
-                  Se hva jeg har{" "}
-                  <span className="text-turquoise-600">skapt</span>
+                  Se hva jeg <span className="text-turquoise-600">tilbyr</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-700 md:text-xl">
-                  Utforsk min portefølje av nettsider jeg har designet og
-                  utviklet for små bedrifter over hele Norge.
+                  Utforsk pakketilbudene, og velg pakken som passer ditt behov
+                  best!
                 </p>
               </div>
             </div>
@@ -88,21 +86,18 @@ export default function PortfolioPage() {
         {/* Portfolio Grid */}
         <section className="py-16 md:py-24 bg-white">
           <div className="container px-4 md:px-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="flex flex-wrap justify-center gap-8">
               {projects.map((project) => (
                 <div
                   key={project.id}
-                  className="group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-all hover:shadow-xl"
+                  className="group relative max-w-sm flex flex-col overflow-hidden rounded-xl shadow-md transition-all hover:shadow-xl"
                 >
                   <div
                     className={`relative h-64 w-full overflow-hidden bg-gradient-to-br ${project.color}`}
                   >
-                    <Image
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform group-hover:scale-105 mix-blend-overlay opacity-75"
-                    />
+                    <div className="opacity-95 mix-blend-overlay flex justify-center items-center h-full">
+                      {project.icon}
+                    </div>
                   </div>
                   <div className="flex flex-1 flex-col justify-between p-6 bg-white">
                     <div>
@@ -128,8 +123,9 @@ export default function PortfolioPage() {
                       size="sm"
                       className="w-full mt-2 group border-turquoise-500 text-turquoise-600 hover:bg-turquoise-50 border-2"
                     >
-                      Se prosjektet{" "}
-                      <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      <Link href="/about#contact">
+                        Kontakt meg for et uforplikende tilbud{" "}
+                      </Link>
                     </Button>
                   </div>
                 </div>
@@ -165,14 +161,14 @@ export default function PortfolioPage() {
                   color: "bg-pink-100 text-pink-700 border-pink-200",
                 },
                 {
-                  step: "03",
+                  step: "02",
                   title: "Design & Utvikling",
                   description:
                     "Jeg bygger nettstedet med fokus på brukervennlighet og som reflekterer din merkevare og appellerer til dine kunder",
                   color: "bg-yellow-100 text-yellow-700 border-yellow-200",
                 },
                 {
-                  step: "04",
+                  step: "03",
                   title: "Lansering",
                   description:
                     "Jeg lanserer nettstedet og sikrer at alt fungerer perfekt før jeg overleverer til deg.",

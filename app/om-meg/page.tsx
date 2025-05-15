@@ -276,15 +276,13 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative">
-                <div className="relative h-[400px] w-full overflow-hidden rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-500 shadow-lg">
-                  <Image
-                    src="/anna-bergen.png"
-                    alt="AWStudio office location"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+              <div className="ml-auto relative h-[350px] w-[550px] rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-500 shadow-lg">
+                <Image
+                  src="/anna-bergen.png"
+                  alt="AWStudio office location"
+                  fill
+                  className="object-cover rounded-xl"
+                />
                 <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-pink-500"></div>
                 <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-turquoise-500"></div>
                 <div className="absolute -top-4 -left-4 h-12 w-12 rounded-full bg-yellow-200"></div>

@@ -15,14 +15,14 @@ export function Header() {
           </Link>
         </div>
         <nav className="hidden md:flex gap-6 items-center">
-          {/* <Link
-            href="/portfolio"
+          <Link
+            href="/tjenester"
             className="text-sm font-medium transition-colors hover:text-pink-600"
           >
-            Portefølje
-          </Link> */}
+            Tjenester
+          </Link>
           <Link
-            href="/about"
+            href="/om-meg"
             className="text-sm font-medium transition-colors hover:text-pink-600"
           >
             Om meg
@@ -31,7 +31,7 @@ export function Header() {
             size="lg"
             className="bg-pink-500 hover:bg-pink-600 text-white"
           >
-            <Link href="/about#contact">Kontakt meg</Link>
+            <Link href="/om-meg#contact">Kontakt meg</Link>
           </Button>
         </nav>
 
@@ -76,14 +76,21 @@ function MobileNav() {
                 Hjem
               </Link>
               <Link
-                href="/about"
+                href="/tjenester"
+                className="block py-2 text-lg font-medium hover:underline"
+                onClick={() => setOpen(false)}
+              >
+                Tjenester
+              </Link>
+              <Link
+                href="/om-meg"
                 className="block py-2 text-lg font-medium hover:underline"
                 onClick={() => setOpen(false)}
               >
                 Om meg
               </Link>
               <Link
-                href="/about#contact"
+                href="/om-meg#contact"
                 className="block py-2 text-lg font-medium hover:underline"
                 onClick={() => setOpen(false)}
               >
