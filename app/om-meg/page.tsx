@@ -40,12 +40,12 @@ export default function AboutPage() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
               <div className="relative">
-                <div className="relative h-[400px] w-full overflow-hidden rounded-xl bg-gradient-to-br from-turquoise-500 to-turquoise-600 shadow-lg">
+                <div className="relative h-[400px] w-full rounded-xl bg-gradient-to-br from-turquoise-200 to-turquoise-500 shadow-lg">
                   <Image
-                    src="/anna-lofoten.png"
-                    alt="Anna Witchen Sundbye working"
+                    src="/computer.png"
+                    alt="Cpmuter working"
                     fill
-                    className="object-cover"
+                    className="scale-75 object-contain"
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-yellow-400"></div>
