@@ -158,16 +158,24 @@ export default function AboutPage() {
                     "UI/UX Design",
                     "Responsivt Design",
                     "Visuell Identitet",
+                    "Branding",
+                    "Digital profil",
                   ],
                 },
                 {
                   category: "Utvikling",
-                  skills: ["HTML/CSS", "JavaScript", "WordPress"],
+                  skills: [
+                    "HTML/CSS",
+                    "JavaScript",
+                    "WordPress",
+                    "Next.js",
+                    "Backend",
+                  ],
                 },
               ].map((skillset, index) => (
                 <div
                   key={index}
-                  className="flex flex-col p-6 bg-white rounded-xl shadow-sm border border-gray-100"
+                  className="flex flex-col p-6 bg-[#fcf9fc] rounded-xl shadow-sm border border-gray-100"
                 >
                   <h3 className="text-xl font-bold mb-4 text-gray-900">
                     {skillset.category}
