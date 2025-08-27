@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 
 export function Header() {
   const pathname = usePathname();
-  
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-brown-100/95 backdrop-blur supports-[backdrop-filter]:bg-brown-100/60">
       <div className="container flex h-16 items-center justify-between">
@@ -25,17 +25,17 @@ export function Header() {
           <Link
             href="/tjenester"
             className={`text-sm font-medium transition-colors relative ${
-              pathname === '/tjenester'
-                ? 'text-brown-700 font-semibold'
-                : 'text-gray-700 hover:text-brown-600'
+              pathname === "/tjenester"
+                ? "text-brown-700 font-semibold"
+                : "text-gray-700 hover:text-brown-600"
             }`}
           >
             Tjenester
-            {pathname === '/tjenester' && (
+            {pathname === "/tjenester" && (
               <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brown-600 rounded-full"></div>
             )}
           </Link>
-          <Link
+          {/* <Link
             href="/design"
             className={`text-sm font-medium transition-colors relative ${
               pathname === '/design'
@@ -47,17 +47,17 @@ export function Header() {
             {pathname === '/design' && (
               <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brown-600 rounded-full"></div>
             )}
-          </Link>
+          </Link> */}
           <Link
             href="/om-meg"
             className={`text-sm font-medium transition-colors relative ${
-              pathname === '/om-meg'
-                ? 'text-brown-700 font-semibold'
-                : 'text-gray-700 hover:text-brown-600'
+              pathname === "/om-meg"
+                ? "text-brown-700 font-semibold"
+                : "text-gray-700 hover:text-brown-600"
             }`}
           >
             Om meg
-            {pathname === '/om-meg' && (
+            {pathname === "/om-meg" && (
               <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brown-600 rounded-full"></div>
             )}
           </Link>
@@ -106,9 +106,9 @@ function MobileNav() {
               <Link
                 href="/"
                 className={`block py-2 text-lg font-medium transition-colors ${
-                  pathname === '/'
-                    ? 'text-brown-700 font-semibold bg-brown-50 px-3 rounded-lg'
-                    : 'hover:text-brown-600 hover:underline'
+                  pathname === "/"
+                    ? "text-brown-700 font-semibold bg-brown-50 px-3 rounded-lg"
+                    : "hover:text-brown-600 hover:underline"
                 }`}
                 onClick={() => setOpen(false)}
               >
@@ -117,9 +117,9 @@ function MobileNav() {
               <Link
                 href="/tjenester"
                 className={`block py-2 text-lg font-medium transition-colors ${
-                  pathname === '/tjenester'
-                    ? 'text-brown-700 font-semibold bg-brown-50 px-3 rounded-lg'
-                    : 'hover:text-brown-600 hover:underline'
+                  pathname === "/tjenester"
+                    ? "text-brown-700 font-semibold bg-brown-50 px-3 rounded-lg"
+                    : "hover:text-brown-600 hover:underline"
                 }`}
                 onClick={() => setOpen(false)}
               >
@@ -128,9 +128,9 @@ function MobileNav() {
               <Link
                 href="/design"
                 className={`block py-2 text-lg font-medium transition-colors ${
-                  pathname === '/design'
-                    ? 'text-brown-700 font-semibold bg-brown-50 px-3 rounded-lg'
-                    : 'hover:text-brown-600 hover:underline'
+                  pathname === "/design"
+                    ? "text-brown-700 font-semibold bg-brown-50 px-3 rounded-lg"
+                    : "hover:text-brown-600 hover:underline"
                 }`}
                 onClick={() => setOpen(false)}
               >
@@ -139,9 +139,9 @@ function MobileNav() {
               <Link
                 href="/om-meg"
                 className={`block py-2 text-lg font-medium transition-colors ${
-                  pathname === '/om-meg'
-                    ? 'text-brown-700 font-semibold bg-brown-50 px-3 rounded-lg'
-                    : 'hover:text-brown-600 hover:underline'
+                  pathname === "/om-meg"
+                    ? "text-brown-700 font-semibold bg-brown-50 px-3 rounded-lg"
+                    : "hover:text-brown-600 hover:underline"
                 }`}
                 onClick={() => setOpen(false)}
               >

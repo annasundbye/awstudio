@@ -7,7 +7,7 @@ export function Footer() {
       <div className="absolute top-4 right-4 w-16 h-16 md:w-24 md:h-24 rounded-full bg-brown-200 opacity-30"></div>
       <div className="absolute bottom-6 left-4 md:left-8 w-12 h-12 md:w-16 md:h-16 rounded-full bg-sage-200 opacity-40"></div>
       <div className="hidden md:block absolute top-1/2 right-1/3 w-8 h-8 rounded-full bg-pink-200 opacity-50"></div>
-      
+
       <div className="container py-6 md:py-10 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -39,7 +39,7 @@ export function Footer() {
                   Tjenester
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/design"
                   className="text-sm text-gray-800 hover:text-brown-700 transition-colors flex items-center group"
@@ -47,7 +47,7 @@ export function Footer() {
                   <div className="w-2 h-2 rounded-full bg-sage-400 mr-2 group-hover:bg-sage-600 transition-colors"></div>
                   Design
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/om-meg"
@@ -106,7 +106,9 @@ export function Footer() {
             </ul>
           </div> */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-sage-800">Kontakt</h3>
+            <h3 className="text-lg font-semibold mb-4 text-sage-800">
+              Kontakt
+            </h3>
             <ul className="space-y-3">
               <li className="text-sm text-gray-800 flex items-center">
                 <div className="w-2 h-2 rounded-full bg-brown-400 mr-2"></div>
