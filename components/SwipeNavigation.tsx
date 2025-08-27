@@ -18,6 +18,7 @@ export default function SwipeNavigation({ children }: SwipeNavigationProps) {
   const [isMounted, setIsMounted] = useState(false);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRightArrow, setShowRightArrow] = useState(false);
+  const [showNavBar, setShowNavBar] = useState(true);
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Get adjacent pages
@@ -32,6 +33,8 @@ export default function SwipeNavigation({ children }: SwipeNavigationProps) {
 
   // Mouse position tracking for side arrows
   useEffect(() => {
+    if (!isMounted) return;
+    
     const handleMouseMove = (e: MouseEvent) => {
       const threshold = 50; // pixels from edge
       const windowWidth = window.innerWidth;
@@ -48,7 +51,7 @@ export default function SwipeNavigation({ children }: SwipeNavigationProps) {
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
     };
-  }, [previousPage, nextPage]);
+  }, [isMounted, previousPage, nextPage]);
 
   // Prefetch adjacent pages
   useEffect(() => {
@@ -67,6 +70,8 @@ export default function SwipeNavigation({ children }: SwipeNavigationProps) {
   };
 
   useEffect(() => {
+    if (!isMounted) return;
+    
     const container = containerRef.current;
     if (!container) return;
 
@@ -142,12 +147,47 @@ export default function SwipeNavigation({ children }: SwipeNavigationProps) {
       container.removeEventListener('wheel', handleWheel);
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, [nextPage, previousPage, isNavigating]);
+  }, [isMounted, nextPage, previousPage, isNavigating]);
 
   const handleNavBarTouch = () => {
     setShowHint(true);
+    setShowNavBar(true);
     setTimeout(() => setShowHint(false), 2000);
   };
+
+  // Auto-hide navigation bar
+  useEffect(() => {
+    if (!isMounted) return;
+    
+    let hideTimeout: NodeJS.Timeout;
+
+    const showNavigation = () => {
+      setShowNavBar(true);
+      clearTimeout(hideTimeout);
+      hideTimeout = setTimeout(() => {
+        setShowNavBar(false);
+      }, 1500); // Hide after 1.5 seconds of inactivity
+    };
+
+    const handleActivity = () => {
+      showNavigation();
+    };
+
+    // Show nav bar initially
+    showNavigation();
+
+    // Listen for any user activity
+    document.addEventListener('mousemove', handleActivity);
+    document.addEventListener('touchstart', handleActivity);
+    document.addEventListener('scroll', handleActivity);
+
+    return () => {
+      clearTimeout(hideTimeout);
+      document.removeEventListener('mousemove', handleActivity);
+      document.removeEventListener('touchstart', handleActivity);
+      document.removeEventListener('scroll', handleActivity);
+    };
+  }, [isMounted]);
 
   if (!isMounted) {
     return (
@@ -177,7 +217,12 @@ export default function SwipeNavigation({ children }: SwipeNavigationProps) {
       <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ 
+            opacity: showNavBar ? 1 : 0, 
+            y: showNavBar ? 0 : 20,
+            pointerEvents: showNavBar ? 'auto' : 'none'
+          }}
+          transition={{ duration: 0.3 }}
           className="bg-brown-600/30 rounded-xl px-4 py-3 flex items-center gap-4 shadow-lg"
           onTouchStart={handleNavBarTouch}
           onMouseEnter={handleNavBarTouch}
