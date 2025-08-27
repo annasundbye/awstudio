@@ -4,8 +4,11 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export function Header() {
+  const pathname = usePathname();
+  
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-brown-100/95 backdrop-blur supports-[backdrop-filter]:bg-brown-100/60">
       <div className="container flex h-16 items-center justify-between">
@@ -21,21 +24,42 @@ export function Header() {
         <nav className="hidden md:flex gap-6 items-center">
           <Link
             href="/tjenester"
-            className="text-sm font-medium transition-colors hover:text-brown-600"
+            className={`text-sm font-medium transition-colors relative ${
+              pathname === '/tjenester'
+                ? 'text-brown-700 font-semibold'
+                : 'text-gray-700 hover:text-brown-600'
+            }`}
           >
             Tjenester
+            {pathname === '/tjenester' && (
+              <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brown-600 rounded-full"></div>
+            )}
           </Link>
           <Link
             href="/design"
-            className="text-sm font-medium transition-colors hover:text-brown-600"
+            className={`text-sm font-medium transition-colors relative ${
+              pathname === '/design'
+                ? 'text-brown-700 font-semibold'
+                : 'text-gray-700 hover:text-brown-600'
+            }`}
           >
             Design
+            {pathname === '/design' && (
+              <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brown-600 rounded-full"></div>
+            )}
           </Link>
           <Link
             href="/om-meg"
-            className="text-sm font-medium transition-colors hover:text-brown-600"
+            className={`text-sm font-medium transition-colors relative ${
+              pathname === '/om-meg'
+                ? 'text-brown-700 font-semibold'
+                : 'text-gray-700 hover:text-brown-600'
+            }`}
           >
             Om meg
+            {pathname === '/om-meg' && (
+              <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brown-600 rounded-full"></div>
+            )}
           </Link>
           <Button
             size="lg"
@@ -53,6 +77,7 @@ export function Header() {
 
 function MobileNav() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <div className="md:hidden">
@@ -80,28 +105,44 @@ function MobileNav() {
             <div className="px-6 py-4 space-y-4">
               <Link
                 href="/"
-                className="block py-2 text-lg font-medium hover:underline"
+                className={`block py-2 text-lg font-medium transition-colors ${
+                  pathname === '/'
+                    ? 'text-brown-700 font-semibold bg-brown-50 px-3 rounded-lg'
+                    : 'hover:text-brown-600 hover:underline'
+                }`}
                 onClick={() => setOpen(false)}
               >
                 Hjem
               </Link>
               <Link
                 href="/tjenester"
-                className="block py-2 text-lg font-medium hover:underline"
+                className={`block py-2 text-lg font-medium transition-colors ${
+                  pathname === '/tjenester'
+                    ? 'text-brown-700 font-semibold bg-brown-50 px-3 rounded-lg'
+                    : 'hover:text-brown-600 hover:underline'
+                }`}
                 onClick={() => setOpen(false)}
               >
                 Tjenester
               </Link>
               <Link
                 href="/design"
-                className="block py-2 text-lg font-medium hover:underline"
+                className={`block py-2 text-lg font-medium transition-colors ${
+                  pathname === '/design'
+                    ? 'text-brown-700 font-semibold bg-brown-50 px-3 rounded-lg'
+                    : 'hover:text-brown-600 hover:underline'
+                }`}
                 onClick={() => setOpen(false)}
               >
                 Design
               </Link>
               <Link
                 href="/om-meg"
-                className="block py-2 text-lg font-medium hover:underline"
+                className={`block py-2 text-lg font-medium transition-colors ${
+                  pathname === '/om-meg'
+                    ? 'text-brown-700 font-semibold bg-brown-50 px-3 rounded-lg'
+                    : 'hover:text-brown-600 hover:underline'
+                }`}
                 onClick={() => setOpen(false)}
               >
                 Om meg
