@@ -29,7 +29,7 @@ export default function PortfolioPage() {
         "Har du behov for å oppdatere nettsiden din bør du velge dette tilbudet. Jeg bygger den etter dine ønsker, med et integrert Content Management System. Opplæring følger med, og vipps er du din egen webdesigner!",
       icon: <Sparkle color="#ffffff" strokeWidth={1.5} size={52} />,
       tags: ["Webdesign", "Dynamisk", "CMS"],
-      color: "from-turquoise-500 to-turquoise-200",
+      color: "from-sage-500 to-sage-200",
     },
     {
       id: 3,
@@ -64,17 +64,17 @@ export default function PortfolioPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-turquoise-50 to-turquoise-100 py-16 md:py-24">
+        <section className="bg-gradient-to-b from-brown-200 to-brown-300 py-16 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2 max-w-[800px]">
-                <div className="inline-block rounded-lg bg-pink-100 px-3 py-1 text-sm text-pink-700 font-medium mb-4">
+                <div className="inline-block rounded-lg bg-white/90 px-3 py-1 text-sm text-brown-700 font-medium mb-4 shadow-sm">
                   Mine tilbud
                 </div>
-                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-gray-900">
-                  Se hva jeg <span className="text-turquoise-600">tilbyr</span>
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white drop-shadow-lg">
+                  Se hva jeg <span className="text-white underline decoration-sage-400 decoration-4 underline-offset-4">tilbyr</span>
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-700 md:text-xl">
+                <p className="mx-auto max-w-[700px] text-white/90 md:text-xl drop-shadow">
                   Utforsk pakketilbudene, og velg pakken som passer ditt behov
                   best!
                 </p>
@@ -121,7 +121,7 @@ export default function PortfolioPage() {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="w-full mt-2 group border-turquoise-500 text-turquoise-600 hover:bg-turquoise-50 border-2"
+                      className="w-full mt-2 group border-sage-500 text-sage-600 hover:bg-sage-50 border-2"
                     >
                       <Link href="/about#contact">
                         Kontakt meg for et uforplikende tilbud{" "}
@@ -139,7 +139,7 @@ export default function PortfolioPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-turquoise-100 px-3 py-1 text-sm text-turquoise-700 font-medium">
+                <div className="inline-block rounded-lg bg-sage-100 px-3 py-1 text-sm text-sage-700 font-medium">
                   Min prosess
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
@@ -158,7 +158,7 @@ export default function PortfolioPage() {
                   title: "Konsultasjon",
                   description:
                     "Vi starter med å forstå din bedrift, dine mål og din målgruppe.",
-                  color: "bg-pink-100 text-pink-700 border-pink-200",
+                  color: "bg-brown-100 text-brown-700 border-brown-200",
                 },
                 {
                   step: "02",
@@ -173,7 +173,7 @@ export default function PortfolioPage() {
                   description:
                     "Jeg lanserer nettstedet og sikrer at alt fungerer perfekt før jeg overleverer til deg.",
                   color:
-                    "bg-turquoise-100 text-turquoise-700 border-turquoise-200",
+                    "bg-sage-100 text-sage-700 border-sage-200",
                 },
               ].map((step, index) => (
                 <div

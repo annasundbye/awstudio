@@ -48,7 +48,7 @@ export default function HomePage() {
         "Jeg fikser eventuelle feil som dukker opp.",
       ],
       icon: "🌸",
-      color: "from-turquoise-200 to-turquoise-500",
+      color: "from-sage-200 to-sage-500",
     },
   ];
 
@@ -59,7 +59,7 @@ export default function HomePage() {
       title: "Konsultasjon",
       description:
         "Vi starter med en samtale om din bedrift, dine mål, målgruppe og behov.",
-      color: "bg-pink-100 text-pink-600 border-pink-200",
+      color: "bg-brown-100 text-brown-600 border-brown-200",
     },
 
     {
@@ -74,21 +74,21 @@ export default function HomePage() {
       title: "Utvikling",
       description:
         "Jeg bygger nettstedet med fokus på brukervennlighet, hastighet og sikkerhet.",
-      color: "bg-turquoise-100 text-turquoise-600 border-turquoise-200",
+      color: "bg-sage-100 text-sage-600 border-sage-200",
     },
     {
       step: "04",
       title: "Testing",
       description:
         "Grundig testing på ulike enheter og nettlesere for å sikre optimal funksjonalitet.",
-      color: "bg-turquoise-100 text-turquoise-600 border-turquoise-200",
+      color: "bg-sage-100 text-sage-600 border-sage-200",
     },
     {
       step: "05",
       title: "Lansering",
       description:
         "Jeg lanserer nettstedet og sikrer at alt fungerer perfekt før jeg overleverer til deg.",
-      color: "bg-pink-100 text-pink-600 border-pink-200",
+      color: "bg-brown-100 text-brown-600 border-brown-200",
     },
     {
       step: "06",
@@ -136,25 +136,25 @@ export default function HomePage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-turquoise-50 to-turquoise-100 py-16 md:py-24">
+        <section className="bg-gradient-to-b from-brown-200 to-brown-300 py-16 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="space-y-4">
-                <div className="inline-block rounded-lg bg-pink-100 px-3 py-1 text-sm text-pink-600 mb-4 font-medium">
+                <div className="inline-block rounded-lg bg-white/90 px-3 py-1 text-sm text-brown-700 mb-4 font-medium shadow-sm">
                   Mine tjenester
                 </div>
-                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-gray-900">
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white drop-shadow-lg">
                   Digitale løsninger for{" "}
-                  <span className="text-turquoise-500">din bedrift</span>
+                  <span className="text-white underline decoration-sage-400 decoration-4 underline-offset-4">din bedrift</span>
                 </h1>
-                <p className="text-lg text-gray-700 md:text-xl max-w-[600px]">
+                <p className="text-lg text-white/90 md:text-xl max-w-[600px] drop-shadow">
                   Jeg tilbyr skreddersydde digitale tjenester som hjelper små
                   bedrifter med å vokse og lykkes på nett.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 pt-4">
                   <Button
                     size="lg"
-                    className="bg-pink-500 hover:bg-pink-600 text-white"
+                    className="bg-brown-400 hover:bg-brown-500 text-white"
                   >
                     <Link href="/about#contact">Kontakt meg</Link>
                   </Button>
@@ -168,7 +168,7 @@ export default function HomePage() {
                   className="object-cover rounded-xl"
                 />
                 <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-pink-400"></div>
-                <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-turquoise-400"></div>
+                <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-sage-400"></div>
               </div>
             </div>
           </div>
@@ -211,7 +211,7 @@ export default function HomePage() {
                     <ul className="space-y-3 mb-6 flex-1">
                       {service.features.map((feature, index) => (
                         <li key={index} className="flex items-start">
-                          <CheckCircle className="h-5 w-5 text-pink-500 mr-2 flex-shrink-0 mt-0.5" />
+                          <CheckCircle className="h-5 w-5 text-brown-500 mr-2 flex-shrink-0 mt-0.5" />
                           <span className="text-gray-700">{feature}</span>
                         </li>
                       ))}
@@ -227,11 +227,11 @@ export default function HomePage() {
         </section>
 
         {/* Additional Services */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-pink-50 to-pink-100">
+        <section className="py-16 md:py-24 bg-gradient-to-b from-brown-50 to-brown-100">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-turquoise-100 px-3 py-1 text-sm text-turquoise-600 font-medium">
+                <div className="inline-block rounded-lg bg-sage-100 px-3 py-1 text-sm text-sage-600 font-medium">
                   Flere tjenester
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
@@ -249,7 +249,7 @@ export default function HomePage() {
                   title: "Innholdsproduksjon",
                   description:
                     "Profesjonell tekst og innhold som engasjerer dine besøkende og konverterer dem til kunder.",
-                  color: "bg-pink-100 text-pink-600",
+                  color: "bg-brown-100 text-brown-600",
                 },
                 {
                   title: "Vedlikehold",
@@ -261,19 +261,19 @@ export default function HomePage() {
                   title: "Konverteringsoptimalisering",
                   description:
                     "Forbedring av nettstedet for å øke konverteringsraten og maksimere avkastningen.",
-                  color: "bg-turquoise-100 text-turquoise-600",
+                  color: "bg-sage-100 text-sage-600",
                 },
                 {
                   title: "Søkemotoroptimalisering",
                   description:
                     "Strategier for å forbedre synligheten i søkemotorer og tiltrekke mer organisk trafikk.",
-                  color: "bg-turquoise-100 text-turquoise-600",
+                  color: "bg-sage-100 text-sage-600",
                 },
                 {
                   title: "Sosiale medier",
                   description:
                     "Strategi og innhold for sosiale medier som bygger merkevarebevissthet og engasjement.",
-                  color: "bg-pink-100 text-pink-600",
+                  color: "bg-brown-100 text-brown-600",
                 },
                 {
                   title: "Analyse og rapportering",
@@ -348,7 +348,7 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-pink-100 px-3 py-1 text-sm text-pink-600 font-medium">
+                <div className="inline-block rounded-lg bg-brown-100 px-3 py-1 text-sm text-brown-600 font-medium">
                   Spørsmål og svar
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
@@ -364,7 +364,7 @@ export default function HomePage() {
               {faqs.map((faq, index) => (
                 <div key={index} className="bg-white rounded-xl shadow-sm p-6">
                   <div className="flex items-start">
-                    <HelpCircle className="h-6 w-6 text-turquoise-500 mr-3 flex-shrink-0 mt-1" />
+                    <HelpCircle className="h-6 w-6 text-sage-500 mr-3 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="text-lg font-bold text-gray-900 mb-2">
                         {faq.question}
@@ -379,7 +379,7 @@ export default function HomePage() {
               <p className="text-gray-700 mb-4">
                 Har du flere spørsmål? Ikke nøl med å kontakte meg.
               </p>
-              <Button className="bg-turquoise-400 hover:bg-turquoise-500 text-white">
+              <Button className="bg-brown-400 hover:bg-brown-500 text-white">
                 <Link href="/about#contact">Kontakt meg</Link>
               </Button>
             </div>

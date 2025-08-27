@@ -6,18 +6,18 @@ export default function AboutPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-pink-50 to-pink-100 py-16 md:py-24">
+        <section className="bg-gradient-to-b from-brown-200 to-brown-300 py-16 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="space-y-4">
-                <div className="inline-block rounded-lg bg-turquoise-100 px-3 py-1 text-sm text-turquoise-700 font-medium mb-4">
+                <div className="inline-block rounded-lg bg-white/90 px-3 py-1 text-sm text-brown-700 font-medium mb-4 shadow-sm">
                   Om meg
                 </div>
-                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-gray-900">
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white drop-shadow-lg">
                   Jeg er{" "}
-                  <span className="text-pink-600">Anna Witchen Sundbye</span>
+                  <span className="text-white underline decoration-sage-400 decoration-4 underline-offset-4">Anna Witchen Sundbye</span>
                 </h1>
-                <p className="text-lg text-gray-700 md:text-xl max-w-[600px]">
+                <p className="text-lg text-white/90 md:text-xl max-w-[600px] drop-shadow">
                   Webdesigner, digital strateg og grunnlegger av AWStudio
                 </p>
               </div>
@@ -28,8 +28,8 @@ export default function AboutPage() {
                   fill
                   className="object-cover rounded-xl"
                 />
-                <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-turquoise-500"></div>
-                <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-pink-500"></div>
+                <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-sage-500"></div>
+                <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-brown-500"></div>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function AboutPage() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
               <div className="relative">
-                <div className="relative h-[400px] w-full rounded-xl bg-gradient-to-br from-turquoise-200 to-turquoise-500 shadow-lg">
+                <div className="relative h-[400px] w-full rounded-xl bg-gradient-to-br from-sage-200 to-sage-500 shadow-lg">
                   <Image
                     src="/computer.png"
                     alt="Cpmuter working"
@@ -49,10 +49,10 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-yellow-400"></div>
-                <div className="absolute -top-6 -left-6 h-16 w-16 rounded-full bg-pink-500"></div>
+                <div className="absolute -top-6 -left-6 h-16 w-16 rounded-full bg-brown-500"></div>
               </div>
               <div className="space-y-4">
-                <div className="inline-block rounded-lg bg-pink-100 px-3 py-1 text-sm text-pink-700 font-medium">
+                <div className="inline-block rounded-lg bg-brown-100 px-3 py-1 text-sm text-brown-700 font-medium">
                   Min historie
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-gray-900">
@@ -84,7 +84,7 @@ export default function AboutPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-turquoise-100 px-3 py-1 text-sm text-turquoise-700 font-medium">
+                <div className="inline-block rounded-lg bg-sage-100 px-3 py-1 text-sm text-sage-700 font-medium">
                   Mine verdier
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
@@ -98,7 +98,7 @@ export default function AboutPage() {
                   title: "Kreativitet",
                   description:
                     "Jeg tenker utenfor boksen for å skape unike og innovative løsninger for mine kunder.",
-                  color: "bg-pink-100 text-pink-700 border-pink-200",
+                  color: "bg-brown-100 text-brown-700 border-brown-200",
                 },
                 {
                   title: "Kvalitet",
@@ -111,7 +111,7 @@ export default function AboutPage() {
                   description:
                     "Jeg er ærlig og transparent i alt jeg gjør, og setter alltid kundens behov først.",
                   color:
-                    "bg-turquoise-100 text-turquoise-700 border-turquoise-200",
+                    "bg-sage-100 text-sage-700 border-sage-200",
                 },
               ].map((value, index) => (
                 <div
@@ -142,7 +142,7 @@ export default function AboutPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-pink-100 px-3 py-1 text-sm text-pink-700 font-medium">
+                <div className="inline-block rounded-lg bg-brown-100 px-3 py-1 text-sm text-brown-700 font-medium">
                   Mine ferdigheter
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
@@ -186,7 +186,7 @@ export default function AboutPage() {
                         key={skillIndex}
                         className="flex items-center text-gray-700"
                       >
-                        <div className="w-2 h-2 rounded-full bg-pink-500 mr-2"></div>
+                        <div className="w-2 h-2 rounded-full bg-brown-500 mr-2"></div>
                         {skill}
                       </li>
                     ))}
@@ -198,7 +198,7 @@ export default function AboutPage() {
         </section>
 
         {/* Education & Experience */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-turquoise-50 to-turquoise-100">
+        <section className="py-16 md:py-24 bg-gradient-to-b from-brown-50 to-brown-100">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
@@ -212,7 +212,7 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="space-y-8">
-                <h3 className="text-2xl font-bold text-gray-900 border-b border-turquoise-200 pb-2">
+                <h3 className="text-2xl font-bold text-gray-900 border-b border-sage-200 pb-2">
                   Utdanning
                 </h3>
                 {[
@@ -232,7 +232,7 @@ export default function AboutPage() {
                 ))}
               </div>
               <div className="space-y-8">
-                <h3 className="text-2xl font-bold text-gray-900 border-b border-turquoise-200 pb-2">
+                <h3 className="text-2xl font-bold text-gray-900 border-b border-sage-200 pb-2">
                   Sertifisering
                 </h3>
                 {[
@@ -260,7 +260,7 @@ export default function AboutPage() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-10 lg:grid-cols-2 items-center">
               <div className="space-y-4">
-                <div className="inline-block rounded-lg bg-pink-100 px-3 py-1 text-sm text-pink-700 font-medium">
+                <div className="inline-block rounded-lg bg-brown-100 px-3 py-1 text-sm text-brown-700 font-medium">
                   Kontaktinformasjon
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-gray-900">
@@ -269,15 +269,15 @@ export default function AboutPage() {
 
                 <div className="space-y-4 pt-4">
                   <div className="flex items-center">
-                    <MapPin className="h-5 w-5 text-pink-600 mr-3" />
+                    <MapPin className="h-5 w-5 text-brown-600 mr-3" />
                     <p className="text-gray-700">Oslo, Norge</p>
                   </div>
                   <div className="flex items-center">
-                    <Phone className="h-5 w-5 text-pink-600 mr-3" />
+                    <Phone className="h-5 w-5 text-brown-600 mr-3" />
                     <p className="text-gray-700">+47 45 26 73 67</p>
                   </div>
                   <div className="flex items-center">
-                    <Mail className="h-5 w-5 text-pink-600 mr-3" />
+                    <Mail className="h-5 w-5 text-brown-600 mr-3" />
                     <p className="text-gray-700">anna@awstudio.no</p>
                   </div>
                 </div>
@@ -289,8 +289,8 @@ export default function AboutPage() {
                   fill
                   className="object-cover rounded-xl"
                 />
-                <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-pink-500"></div>
-                <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-turquoise-500"></div>
+                <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-brown-500"></div>
+                <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-sage-500"></div>
                 <div className="absolute -top-4 -left-4 h-12 w-12 rounded-full bg-yellow-200"></div>
                 <div className="absolute -top-8 left-6 h-6 w-6 rounded-full bg-yellow-200"></div>
               </div>

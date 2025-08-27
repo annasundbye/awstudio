@@ -7,29 +7,39 @@ import { useState } from "react";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-brown-100/95 backdrop-blur supports-[backdrop-filter]:bg-brown-100/60">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/">
-            <img src="/blue-logo.png" alt="" className="h-12 w-auto" />
+            <img
+              src="/pink-logo.png"
+              alt=""
+              className="h-52 w-auto translate-y-4"
+            />
           </Link>
         </div>
         <nav className="hidden md:flex gap-6 items-center">
           <Link
             href="/tjenester"
-            className="text-sm font-medium transition-colors hover:text-pink-600"
+            className="text-sm font-medium transition-colors hover:text-brown-600"
           >
             Tjenester
           </Link>
           <Link
+            href="/design"
+            className="text-sm font-medium transition-colors hover:text-brown-600"
+          >
+            Design
+          </Link>
+          <Link
             href="/om-meg"
-            className="text-sm font-medium transition-colors hover:text-pink-600"
+            className="text-sm font-medium transition-colors hover:text-brown-600"
           >
             Om meg
           </Link>
           <Button
             size="lg"
-            className="bg-pink-500 hover:bg-pink-600 text-white"
+            className="bg-brown-400 hover:bg-brown-500 text-white"
           >
             <Link href="/om-meg#contact">Kontakt meg</Link>
           </Button>
@@ -81,6 +91,13 @@ function MobileNav() {
                 onClick={() => setOpen(false)}
               >
                 Tjenester
+              </Link>
+              <Link
+                href="/design"
+                className="block py-2 text-lg font-medium hover:underline"
+                onClick={() => setOpen(false)}
+              >
+                Design
               </Link>
               <Link
                 href="/om-meg"

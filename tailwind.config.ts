@@ -53,36 +53,42 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom colors for AWStudio with lighter shades
+        // Custom colors for AWStudio with new palette
+        brown: {
+          50: "#f5f2ef",
+          100: "#e8e0d5",
+          200: "#dbc7b5",
+          300: "#cdaa86", // Primary brown
+          400: "#c19970",
+          500: "#b5885a",
+          600: "#a07749",
+        },
+        sage: {
+          50: "#f7f8f4",
+          100: "#eef0e6",
+          200: "#e5e7d8",
+          300: "#dedfca", // Primary sage
+          400: "#d6d8bc",
+          500: "#ced1ae",
+          600: "#c5c8a0",
+        },
         pink: {
-          50: "#fdf2f8",
-          100: "#fce7f3",
-          200: "#fbcfe8",
-          300: "#f9a8d4",
-          400: "#f472b6",
-          500: "#f55fad", // Lighter pink
-          600: "#ec4899",
-          700: "#db2777",
+          50: "#fffbfc",
+          100: "#fff5f8",
+          200: "#ffecf1",
+          300: "#ffdef4", // Primary pink
+          400: "#ffcbea",
+          500: "#ffb8e1",
+          600: "#ffa5d7",
         },
         yellow: {
-          50: "#fefce8",
-          100: "#fef9c3",
-          200: "#fef08a",
-          300: "#fde047",
-          400: "#ffdd65", // Lighter yellow
-          500: "#ffd233",
-          600: "#facc15",
-          700: "#eab308",
-        },
-        turquoise: {
-          50: "#ecfeff",
-          100: "#cffafe",
-          200: "#a5f3fc",
-          300: "#67e8f9",
-          400: "#5ce1e6", // Lighter turquoise
-          500: "#22d3ee",
-          600: "#06b6d4",
-          700: "#0891b2",
+          50: "#fffcf5",
+          100: "#fff7e4",
+          200: "#fff3d3",
+          300: "#ffebae", // Primary yellow
+          400: "#ffe599",
+          500: "#ffdf84",
+          600: "#ffd96f",
         },
       },
       borderRadius: {
