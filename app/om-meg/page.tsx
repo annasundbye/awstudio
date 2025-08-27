@@ -15,10 +15,12 @@ export default function AboutPage() {
                 </div>
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white drop-shadow-lg">
                   Jeg er{" "}
-                  <span className="text-white underline decoration-sage-400 decoration-4 underline-offset-4">Anna Witchen Sundbye</span>
+                  <span className="text-white underline decoration-sage-400 decoration-4 underline-offset-4">
+                    Anna Witchen Sundbye
+                  </span>
                 </h1>
                 <p className="text-lg text-white/90 md:text-xl max-w-[600px] drop-shadow">
-                  Webdesigner, digital strateg og grunnlegger av AWStudio
+                  Webdesigner og grunnlegger av AWStudio
                 </p>
               </div>
               <div className="relative ml-auto h-[350px] md:h-[300px] w-[450px] rounded-xl shadow-xl">
@@ -110,8 +112,7 @@ export default function AboutPage() {
                   title: "Integritet",
                   description:
                     "Jeg er ærlig og transparent i alt jeg gjør, og setter alltid kundens behov først.",
-                  color:
-                    "bg-sage-100 text-sage-700 border-sage-200",
+                  color: "bg-sage-100 text-sage-700 border-sage-200",
                 },
               ].map((value, index) => (
                 <div
