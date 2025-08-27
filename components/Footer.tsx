@@ -4,9 +4,9 @@ export function Footer() {
   return (
     <footer className="relative border-t bg-gradient-to-br from-brown-50 to-sage-50 overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-4 right-4 w-24 h-24 rounded-full bg-brown-200 opacity-30"></div>
-      <div className="absolute bottom-6 left-8 w-16 h-16 rounded-full bg-sage-200 opacity-40"></div>
-      <div className="absolute top-1/2 right-1/3 w-8 h-8 rounded-full bg-pink-200 opacity-50"></div>
+      <div className="absolute top-4 right-4 w-16 h-16 md:w-24 md:h-24 rounded-full bg-brown-200 opacity-30"></div>
+      <div className="absolute bottom-6 left-4 md:left-8 w-12 h-12 md:w-16 md:h-16 rounded-full bg-sage-200 opacity-40"></div>
+      <div className="hidden md:block absolute top-1/2 right-1/3 w-8 h-8 rounded-full bg-pink-200 opacity-50"></div>
       
       <div className="container py-6 md:py-10 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">

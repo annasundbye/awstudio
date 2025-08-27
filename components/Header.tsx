@@ -9,12 +9,12 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-brown-100/95 backdrop-blur supports-[backdrop-filter]:bg-brown-100/60">
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-2 -ml-16">
+        <div className="flex items-center gap-2 -ml-4 md:-ml-16">
           <Link href="/">
             <img
               src="/logo-pink2.png"
               alt=""
-              className="h-52 w-auto translate-y-4"
+              className="h-32 md:h-52 w-auto translate-y-2 md:translate-y-4"
             />
           </Link>
         </div>
