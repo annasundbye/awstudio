@@ -145,7 +145,9 @@ export default function HomePage() {
                 </div>
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white drop-shadow-lg">
                   Digitale løsninger for{" "}
-                  <span className="text-white underline decoration-sage-400 decoration-4 underline-offset-4">din bedrift</span>
+                  <span className="text-white underline decoration-sage-400 decoration-4 underline-offset-4">
+                    din bedrift
+                  </span>
                 </h1>
                 <p className="text-lg text-white/90 md:text-xl max-w-[600px] drop-shadow">
                   Jeg tilbyr skreddersydde digitale tjenester som hjelper små
@@ -162,10 +164,10 @@ export default function HomePage() {
               </div>
               <div className="relative mx-auto lg:ml-auto h-[300px] md:h-[350px] w-full max-w-[450px] rounded-xl bg-gradient-to-br from-yellow-300 to-yellow-400 shadow-xl">
                 <Image
-                  src="/anna-paris.png"
+                  src="/illustration.png"
                   alt="AWStudio tjenester"
                   fill
-                  className="object-cover rounded-xl"
+                  className="size-full scale-75 invert opacity-75"
                 />
                 <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-pink-400"></div>
                 <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-sage-400"></div>
