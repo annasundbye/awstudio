@@ -126,7 +126,7 @@ export default function PortfolioPage() {
                       size="sm"
                       className="w-full mt-2 group border-sage-500 text-sage-600 hover:bg-sage-50 border-2"
                     >
-                      <Link href="/about#contact">
+                      <Link href="/om-meg#contact">
                         Kontakt meg for et uforplikende tilbud{" "}
                       </Link>
                     </Button>
