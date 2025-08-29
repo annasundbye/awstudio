@@ -167,7 +167,7 @@ export default function HomePage() {
                   src="/anna-paris.png"
                   alt="AWStudio tjenester"
                   fill
-                  className="size-full scale-75 invert opacity-75"
+                  className="size-full object-cover"
                 />
                 <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-pink-400"></div>
                 <div className="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-sage-400"></div>
