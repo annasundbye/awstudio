@@ -17,7 +17,7 @@ export default function PortfolioPage() {
       id: 1,
       title: "AWStudio Lite",
       description:
-        "Trenger du kun en statisk nettsiden, uten behov for å oppdatere innhold? Da er dette tilbudet for deg! Jeg bygger en moderne nettside tilpasset din merkevare og kundegruppe. Enkelt og greit.",
+        "Trenger du kun en statisk nettside, uten behov for å oppdatere innhold? Da er dette tilbudet for deg! Jeg bygger en moderne nettside tilpasset din merkevare og kundegruppe. Enkelt og greit.",
       tags: ["Webdesign", "Statisk", "Personlig"],
       icon: <WandSparkles color="#ffffff" strokeWidth={1.5} size={40} />,
       color: "from-pink-300 to-pink-500",
@@ -72,7 +72,10 @@ export default function PortfolioPage() {
                   Mine tilbud
                 </div>
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white drop-shadow-lg">
-                  Se hva jeg <span className="text-white underline decoration-sage-400 decoration-4 underline-offset-4">tilbyr</span>
+                  Se hva jeg{" "}
+                  <span className="text-white underline decoration-sage-400 decoration-4 underline-offset-4">
+                    tilbyr
+                  </span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-white/90 md:text-xl drop-shadow">
                   Utforsk pakketilbudene, og velg pakken som passer ditt behov
@@ -172,8 +175,7 @@ export default function PortfolioPage() {
                   title: "Lansering",
                   description:
                     "Jeg lanserer nettstedet og sikrer at alt fungerer perfekt før jeg overleverer til deg.",
-                  color:
-                    "bg-sage-100 text-sage-700 border-sage-200",
+                  color: "bg-sage-100 text-sage-700 border-sage-200",
                 },
               ].map((step, index) => (
                 <div
