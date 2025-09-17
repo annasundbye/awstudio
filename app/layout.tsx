@@ -71,14 +71,6 @@ export default function RootLayout({
                         som skiller seg ut og gir resultater.
                       </p>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-3 lg:justify-end">
-                      <Button
-                        size="lg"
-                        className="bg-white text-pink-600 hover:bg-gray-100"
-                      >
-                        <Link href="/about#contact">Kontakt meg i dag</Link>
-                      </Button>
-                    </div>
                   </div>
                 </div>
               </section>
