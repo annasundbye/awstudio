@@ -13,6 +13,9 @@ import { Inter } from "next/font/google";
 import { Header } from "@/components/Header";
 import SwipeNavigation from "@/components/SwipeNavigation";
 import Link from "next/link";
+import Script from "next/script";
+import { GA_TRACKING_ID } from "@/lib/gtag";
+import AnalyticsProvider from "@/hooks/analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +26,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="no">
+      <head>
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_TRACKING_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -30,6 +54,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <AnalyticsProvider />
           <div className="flex flex-col min-h-screen">
             <Header />
             <SwipeNavigation>
