@@ -125,26 +125,20 @@ export function Footer() {
           <p className="text-sm text-gray-800">
             © {new Date().getFullYear()} AWStudio. Alle rettigheter reservert.
           </p>
-          {/* <div className="flex gap-4">
+          <div className="flex gap-4">
             <Link
-              href="#"
+              href="/personvern"
               className="text-sm text-muted-foreground hover:text-foreground"
             >
               Personvern
             </Link>
             <Link
-              href="#"
-              className="text-sm text-muted-foreground hover:text-foreground"
-            >
-              Vilkår
-            </Link>
-            <Link
-              href="#"
+              href="/cookies"
               className="text-sm text-muted-foreground hover:text-foreground"
             >
               Cookies
             </Link>
-          </div> */}
+          </div>
         </div>
       </div>
     </footer>
