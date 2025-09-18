@@ -3,14 +3,19 @@
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, Suspense } from "react";
 import * as gtag from "@/lib/gtag";
+import { COOKIE_CONSENT_KEY } from "@/lib/constants";
 
 function AnalyticsProviderInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    const url = pathname + searchParams.toString();
-    gtag.pageview(url);
+    const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
+
+    if (consent === "accepted") {
+      const url = pathname + searchParams.toString();
+      gtag.pageview(url);
+    }
   }, [pathname, searchParams]);
 
   return null;
