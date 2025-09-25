@@ -6,15 +6,11 @@ export const metadata = {
 
 import type React from "react";
 import "./globals.css";
-import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/Header";
 import SwipeNavigation from "@/components/SwipeNavigation";
-import Link from "next/link";
-import Script from "next/script";
-import { GA_TRACKING_ID } from "@/lib/gtag";
 import AnalyticsProvider from "@/hooks/analytics";
 import CookieBanner from "@/components/CookieBanner";
 import { GoogleAnalyticsScripts } from "@/hooks/google";
@@ -29,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="no">
       <head>
-        {/* Google Analytics */}
+        <link rel="shortcut icon" href="/signatur2.png" type="image/x-icon" />
         <GoogleAnalyticsScripts />
       </head>
       <body className={inter.className}>
