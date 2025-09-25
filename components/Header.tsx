@@ -12,13 +12,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-brown-100/95 backdrop-blur supports-[backdrop-filter]:bg-brown-100/60">
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-2 -ml-4 md:-ml-16">
+        <div className="flex items-center gap-2 -ml-4 md:-ml-12">
           <Link href="/">
-            <img
-              src="/logo-pink2.png"
-              alt=""
-              className="h-32 md:h-52 w-auto translate-y-2 md:translate-y-4"
-            />
+            <img src="/signatur2.png" alt="" className="h-32 md:h-28 w-auto" />
           </Link>
         </div>
         <nav className="hidden md:flex gap-6 items-center">
@@ -86,16 +82,16 @@ function MobileNav() {
         <span className="sr-only">Åpne meny</span>
       </Button>
       {open && (
-        <div className="fixed inset-0 z-50 bg-white backdrop-blur-sm">
-          <div className="fixed inset-y-0 right-0 w-full max-w-xs bg-white h-fit shadow-lg">
-            <div className="flex h-16 items-center justify-between px-6">
-              <Link href="/">
-                <img src="/blue-logo.png" alt="" className="h-12 w-auto" />
-              </Link>
+        <div className="fixed inset-0 z-50 ">
+          <div className="fixed inset-y-0 right-0 w-full max-w-xs bg-sage-50 h-fit shadow-lg rounded-lg">
+            <div className="relative">
+              {/* <Link href="/">
+                <img src="/signatur2.png" alt="" className="h-20 w-auto" />
+              </Link> */}
               <Button
                 variant="ghost"
                 size="icon"
-                className="ml-auto mr-2"
+                className="absolute top-4 right-4"
                 onClick={() => setOpen(false)}
               >
                 <X className="h-6 w-6" />
@@ -125,7 +121,7 @@ function MobileNav() {
               >
                 Tjenester
               </Link>
-              <Link
+              {/* <Link
                 href="/design"
                 className={`block py-2 text-lg font-medium transition-colors ${
                   pathname === "/design"
@@ -135,7 +131,7 @@ function MobileNav() {
                 onClick={() => setOpen(false)}
               >
                 Design
-              </Link>
+              </Link> */}
               <Link
                 href="/om-meg"
                 className={`block py-2 text-lg font-medium transition-colors ${

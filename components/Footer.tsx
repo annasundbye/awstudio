@@ -13,12 +13,12 @@ export function Footer() {
           <div className="space-y-4">
             <Link
               href="/"
-              className="flex items-center space-x-2 h-12 overflow-hidden"
+              className="flex items-center space-x-2 h-16 overflow-hidden"
             >
               <img
-                src="/logo-sage.png"
+                src="/signatur2-sage.png"
                 alt=""
-                className="h-44 w-auto translate-y-2 -translate-x-4"
+                className="h-32 w-auto -translate-x-4"
               />
             </Link>
             <p className="text-sm text-muted-foreground">
