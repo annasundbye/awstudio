@@ -164,7 +164,7 @@ export default function HomePage() {
               </div>
               <div className="relative mx-auto lg:ml-auto h-[300px] md:h-[350px] w-full max-w-[450px] rounded-xl bg-gradient-to-br from-yellow-300 to-yellow-400 shadow-xl">
                 <Image
-                  src="/anna-paris.png"
+                  src="/header.png"
                   alt="AWStudio tjenester"
                   fill
                   className="size-full object-cover rounded-lg"
