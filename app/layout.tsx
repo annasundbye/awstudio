@@ -17,6 +17,7 @@ import { GoogleAnalyticsScripts } from "@/hooks/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
+const GTM_TAG = "GTM-NXQ3KFQ5";
 
 export default function RootLayout({
   children,
@@ -26,14 +27,14 @@ export default function RootLayout({
   return (
     <html lang="no">
       <head>
-        <GoogleTagManager gtmId="GTM-5QH7L8RH" />
+        <GoogleTagManager gtmId={GTM_TAG} />
         <link rel="shortcut icon" href="/signatur2.png" type="image/x-icon" />
         <GoogleAnalyticsScripts />
       </head>
       <body className={inter.className}>
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-5QH7L8RH"
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_TAG}`}
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
