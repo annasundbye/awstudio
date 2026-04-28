@@ -158,7 +158,7 @@ export default function HomePage() {
                     size="lg"
                     className="bg-brown-400 hover:bg-brown-500 text-white"
                   >
-                    <Link href="/about#contact">Kontakt meg</Link>
+                    <Link href="/om-meg#contact">Kontakt meg</Link>
                   </Button>
                 </div>
               </div>
@@ -383,7 +383,7 @@ export default function HomePage() {
                 Har du flere spørsmål? Ikke nøl med å kontakte meg.
               </p>
               <Button className="bg-brown-400 hover:bg-brown-500 text-white">
-                <Link href="/about#contact">Kontakt meg</Link>
+                <Link href="/om-meg#contact">Kontakt meg</Link>
               </Button>
             </div>
           </div>
