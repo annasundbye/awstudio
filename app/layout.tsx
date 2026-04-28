@@ -13,7 +13,7 @@ import { Header } from "@/components/Header";
 import SwipeNavigation from "@/components/SwipeNavigation";
 import AnalyticsProvider from "@/hooks/analytics";
 import CookieBanner from "@/components/CookieBanner";
-import { GoogleAnalyticsScripts } from "@/hooks/google";
+// import { GoogleAnalyticsScripts } from "@/hooks/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,7 +28,7 @@ export default function RootLayout({
       <head>
         <GoogleTagManager gtmId="GTM-5QH7L8RH" />
         <link rel="shortcut icon" href="/signatur2.png" type="image/x-icon" />
-        <GoogleAnalyticsScripts />
+        {/* <GoogleAnalyticsScripts /> */}
       </head>
       <body className={inter.className}>
         <noscript>
