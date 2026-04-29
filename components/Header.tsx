@@ -14,7 +14,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2 -ml-4 md:-ml-12">
           <Link href="/">
-            <img src="/signatur2.png" alt="" className="h-32 md:h-28 w-auto" />
+            <img src="/signatur2.png" alt="" className="h-16 md:h-28 w-auto" />
           </Link>
         </div>
         <nav className="hidden md:flex gap-6 items-center">
