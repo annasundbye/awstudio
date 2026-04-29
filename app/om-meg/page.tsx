@@ -285,7 +285,7 @@ export default function AboutPage() {
               </div>
               <div className="mx-auto lg:ml-auto relative h-[300px] md:h-[350px] w-full max-w-[550px] rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-500 shadow-lg">
                 <Image
-                  src="/anna-bergen.png"
+                  src="/anna-cv.png"
                   alt="AWStudio office location"
                   fill
                   className="object-cover rounded-xl"

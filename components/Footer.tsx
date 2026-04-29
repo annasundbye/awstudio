@@ -116,7 +116,7 @@ export function Footer() {
               </li>
               <li className="text-sm text-gray-800 flex items-center">
                 <div className="w-2 h-2 rounded-full bg-sage-400 mr-2"></div>
-                anna@awstudio.no
+                anna.w.s@live.no
               </li>
             </ul>
           </div>

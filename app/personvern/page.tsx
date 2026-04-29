@@ -77,7 +77,7 @@ export default function Personvern() {
 
         <p>
           Dersom du ønsker å utøve noen av dine rettigheter, ta kontakt med oss
-          på <a href="mailto:anna@awstudio.no">anna@awstudio.no</a>.
+          på <a href="mailto:anna.w.s@live.no">anna.w.s@live.no</a>.
         </p>
       </div>
 
