@@ -21,7 +21,6 @@ export default function PortfolioPage() {
       tags: ["Webdesign", "Statisk", "Personlig"],
       icon: <WandSparkles color="#ffffff" strokeWidth={1.5} size={40} />,
       color: "from-pink-300 to-pink-500",
-      price: "3499,-",
     },
     {
       id: 2,
@@ -31,7 +30,6 @@ export default function PortfolioPage() {
       icon: <Sparkle color="#ffffff" strokeWidth={1.5} size={52} />,
       tags: ["Webdesign", "Dynamisk", "CMS"],
       color: "from-sage-500 to-sage-200",
-      price: "4499,-",
     },
     {
       id: 3,
@@ -41,7 +39,6 @@ export default function PortfolioPage() {
       icon: <Sparkles color="#ffffff" strokeWidth={1.5} size={52} />,
       tags: ["Webdesign", "SoMe", "Digital Markedsføring"],
       color: "from-yellow-200 to-yellow-400",
-      price: "5499,-",
     },
     {
       id: 4,
@@ -51,18 +48,6 @@ export default function PortfolioPage() {
       icon: <Headset color="#ffffff" strokeWidth={1.5} size={52} />,
       tags: ["AWStudio Lite", "Support", "Vedlikehold"],
       color: "from-yellow-100 to-yellow-200",
-      price:
-        "Pris avtales etter behov. Kunden kan velge mellom faspris pr. måned eller engangsbeløp pr. oppdatering",
-    },
-    {
-      id: 5,
-      title: "Kommer snart...",
-      description:
-        "Jeg jobber for tiden med et online-booking-system som så snart som mulig lanseres – en løsning kundene dine enkelt kan ta i bruk direkte via nettsiden.",
-      icon: <Hammer color="#ffffff" strokeWidth={1.5} size={52} />,
-      tags: [],
-      color: "from-pink-100 to-pink-300",
-      price: "",
     },
   ];
 
