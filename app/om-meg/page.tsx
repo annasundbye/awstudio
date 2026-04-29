@@ -23,7 +23,7 @@ export default function AboutPage() {
                   Webdesigner og grunnlegger av AWStudio
                 </p>
               </div>
-              <div className="relative mx-auto lg:ml-auto h-[300px] md:h-[350px] w-full max-w-[450px] rounded-xl shadow-xl">
+              <div className="relative mx-auto lg:ml-auto h-[150px] md:h-[250px] w-full max-w-[300px] rounded-xl shadow-xl">
                 <Image
                   src="/anna-paris.png"
                   alt="Anna Witchen Sundbye"
@@ -279,11 +279,11 @@ export default function AboutPage() {
                   </div>
                   <div className="flex items-center">
                     <Mail className="h-5 w-5 text-brown-600 mr-3" />
-                    <p className="text-gray-700">anna@awstudio.no</p>
+                    <p className="text-gray-700">anna.w.s@live.no</p>
                   </div>
                 </div>
               </div>
-              <div className="mx-auto lg:ml-auto relative h-[300px] md:h-[350px] w-full max-w-[550px] rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-500 shadow-lg">
+              <div className="mx-auto lg:ml-auto relative h-[500px] md:h-[350px] w-full max-w-[300px] rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-500 shadow-lg">
                 <Image
                   src="/anna-cv.png"
                   alt="AWStudio office location"
